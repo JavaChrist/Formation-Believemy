@@ -4,129 +4,116 @@
 * {
     box-sizing: border-box;
 }
-img
-{
+
+img {
     width: 100%;
 }
 
-nav a, nav li
-{
-    color: #FF7373;
-}
+
 /*element1 = applique à element1 expl nav a, */
 /*element1, element2 = applique à element1 et elemnet2 expl nav a,li */
 /*element0 element1 = applique à element1 s'il est dans element0 nav a, nav li */
 
-h1
-{
+h1 {
     font-size: 40px;
     font-family: "Noto Sans KR", cursive;
     margin-top: 40px 0 10px;
     text-align: center;
-   
-}
-
-h2 
-{
-margin: 0.83em 0 0 0;
 
 }
 
-body
-{
+h2 {
+    margin: 0.83em 0 0 0;
+
+}
+
+body {
     font-family: "Roboto", serif;
     margin: 0;
-    
+
 }
-   
-    /*Margin si le bas n'est pas donné alors = haut, si la gauche n'est pas donnée alors = droite*/
-    /* margin: 5px 0; */
-ul
-{
+
+/*Margin si le bas n'est pas donné alors = haut, si la gauche n'est pas donnée alors = droite*/
+/* margin: 5px 0; */
+ul {
     margin: 5px 0;
     padding: 0;
     list-style-type: none;
     display: flex;
     gap: 15px;
-}  
-header
-{
-    
-    
+}
+
+header {
     font-size: 60px;
     font-family: 'Pacifico', cursive;
     color: white;
     text-shadow: 0 0 30px black;
-      
-}
-#slogan
-{
-display: block; 
-font-size: 30px;   
-font-family: Roboto, arial, sans-serif;
 }
 
-#top
-{
-    font-size: 19px ;
+#slogan {
+    display: block;
+    font-size: 30px;
+    font-family: Roboto, arial, sans-serif;
+}
+
+#top {
+    font-size: 19px;
     text-align: center;
     margin-bottom: 40px;
-   }
+}
 
 
-#tokyo
-{
+#tokyo {
     background-image: url("https://th.bing.com/th/id/OIP.kcFS3Jk-OlLPqvCw-NDg9QHaGq?w=286&h=198&c=7&r=0&o=5&pid=1.7");
     grid-row: 1 / 3;
 }
-#kyoto
-{
+
+#kyoto {
     background-image: url("https://th.bing.com/th/id/OIP.qD94P5Nr53CrN1wsWyFrLQAAAA?w=236&h=349&c=7&o=5&pid=1.7");
     grid-column: 2 / 4;
 }
-#nara
-{
-     background-image: url("https://th.bing.com/th/id/OIP.ZiaMyouExN2-PLmFarnpYgHaE8?rs=1&pid=ImgDetMain")    
+
+#nara {
+    background-image: url("https://th.bing.com/th/id/OIP.ZiaMyouExN2-PLmFarnpYgHaE8?rs=1&pid=ImgDetMain")
 }
 
-#osaka
-{
+#osaka {
     background-image: url("https://th.bing.com/th/id/OIP.Py0eTLaCXo3fkPvLBIi_VQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7");
-    
+
 }
 
-#flexbox-ville
-    {
-        /*display: flex;*/
-        display: grid;
-        grid-template-columns: repeat (3, 1fr );
-       /* grid-template-rows: 1fr;*/
-        gap: 30px;
-    }
+#flexbox-ville {
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    /* grid-template-rows: 1fr;*/
+    gap: 30px;
+}
 
-#voir
-{
-    display: inline-flex; 
-    align-items: center; 
-    gap: 5px; color: #FF7373;
+#voir {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #FF7373;
     transition: all 0.4s;
-   gap: 0;
+    gap: 0;
 }
+
 #flexbox-foot {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
 
-#voir:hover{
+#voir:hover {
     gap: 10px;
 }
-.ville
-{
+
+.ville {
     background-size: cover;
     width: 100%;
     height: 100%;
-    min-height: 400px; 
+    min-height: 400px;
     border: 3px solid white;
     transition: all 0.2s;
     border-radius: 30px;
@@ -136,61 +123,65 @@ font-family: Roboto, arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 100px rgba(0,0, 0, 4);
-    
+    box-shadow: 0 0 100px rgba(0, 0, 0, 4);
+
 
 }
- .ville:hover
- {
-    border: 3px solid #ff7373;
- }
 
-footer
-{
-    /*background-color:#7A90A4;*/
+.ville:hover {
+    border: 3px solid #ff7373;
+}
+
+footer {
+    background-color: #7A90A4;
     background: left /100px url("https://www.shapes4free.com/assets/previews/2020/07/japanese-seigaiha-wave-pattern-vector/japanese-seigaiha-wave-pattern-vector-Shapes4FREE-lg.png");
     padding: 15px;
     font-size: 14pxs;
     margin-top: 40px;
- 
+
+
 }
 
-a
-{
+a {
     text-decoration: none;
-}
-
-#bienvenue {
-background-image: url("../images/Japon2.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-display:flex;
-/*justify-content:*/
-align-items: center;
-
- }
- .italic
- {
-    font-style: italic;
- }
-.underline
-{
-    text-decoration: underline;
-}
-.bold
-{
-    font-weight: bold;
-}
-.contenu
-{
+    color: black;
     padding: 10px;
 }
 
-.conteneur
-{
+a:hover {
+    font-size: 1.1rem;
+}
+
+#bienvenue {
+    background-image: url("../images/Japon2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    /*justify-content:*/
+    align-items: center;
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contenu {
+    padding: 10px;
+}
+
+.conteneur {
     width: 1300px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 
@@ -198,47 +189,48 @@ align-items: center;
 /* 1300 : NOTE BOOCK */
 
 
-@media all and (max-width: 1350px)
-{
-     .conteneur
-     {
-     width: 800px;
+@media all and (max-width: 1350px) {
+    .conteneur {
+        width: 800px;
     }
-      
-    #flebox-ville
-        {
-        grid-template-columns: repeat (2, 1fr );
-        }
-    #kyoto
-    {
+
+    #flebox-ville {
+        grid-template-columns: repeat (2, 1fr);
+    }
+
+    #kyoto {
         grid-column: auto;
     }
-    #nara
-    {
+
+    #nara {
         grid-column: 1 / 3;
     }
 }
 
 
 /* 768 : TABLETTE */
-@media all and (max-width: 800px)
-{
+@media all and (max-width: 800px) {
     .conteneur {
-width: 500px;
+        width: 500px;
     }
+
     #flexbox-ville {
         grid-template-columns: 1fr;
     }
-    #tokyo{
+
+    #tokyo {
         grid-row: auto;
     }
+
     #nara {
         grid-column: auto;
     }
+
     #flexbox-foot {
         flex-direction: column;
         gap: px;
     }
+
     #logo-foot {
         display: flex;
         flex-direction: column;
@@ -248,8 +240,7 @@ width: 500px;
 
 
 /* 480 / SMARTHPHONE*/
-@media all and (max-width: 570px)
-{
+@media all and (max-width: 570px) {
     .conteneur {
         width: 100%;
     }
